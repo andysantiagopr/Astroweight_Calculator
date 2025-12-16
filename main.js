@@ -33,7 +33,6 @@
             }
         }
     } 
-    //comment test//
     function handleClickEvent(e) {
         let userWeight = Number(document.getElementById("user-weight").value);
         let planetName = document.getElementById("planets").value; 
