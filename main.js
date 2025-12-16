@@ -33,7 +33,7 @@
             }
         }
     } 
-
+    //comment test//
     function handleClickEvent(e) {
         let userWeight = Number(document.getElementById("user-weight").value);
         let planetName = document.getElementById("planets").value; 
@@ -42,7 +42,7 @@
     } 
         document.getElementById("calculate-button").onclick = handleClickEvent;
 
-        
+
         // 8. Make it look nice by attaching  a style.css file to your index.html and writing some basic styling, 
         // feel free to add classes and id's to the HTML elements as you need, 
         // import.a google font and use it for some or all of the text on your page. 
