@@ -29,7 +29,7 @@
             if (planet[0] === planetName) {
                 return planet[1] * weight;
             }
-        } return "Planet not found in our system!"
+        } return "Invalid Input!"
     } 
     function handleClickEvent(e) {
         let userWeight = Number(document.getElementById("user-weight").value);
@@ -38,12 +38,3 @@
         document.getElementById("output").textContent = `If you were on ${planetName}, you would weigh ${result.toFixed(2)}lbs!`;
     } 
         document.getElementById("calculate-button").onclick = handleClickEvent;
-
-
-        // 8. Make it look nice by attaching  a style.css file to your index.html and writing some basic styling, 
-        // feel free to add classes and id's to the HTML elements as you need, 
-        // import.a google font and use it for some or all of the text on your page. 
-
-
-        // Bonus Challenges 
-        // 8. Reverse the drop down order so that the sun is first.

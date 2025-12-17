@@ -4,14 +4,25 @@
 <head>
   <meta charset="utf-8">
   <title>Astro Weight Calculator</title>
+  <link rel="stylesheet" href="./css/style.css">
 </head>
-
 <body>
-<input id="user-weight" type="text" placeholder="Weight (lbs)" />
-<select id="planets">Planets</select>
-<button id="calculate-button">Calculate</button>
-<p id="output"></p>
-<script src="main.js" charset="utf-8"></script>
+  <main>
+    <video class="bg-video" autoplay muted loop playsinline>
+      <source src="./assets/space.mp4" type="video/mp4" />
+    </video>
+    <section id="container">
+      <h1 id="title">The Astroweight Calculator</h1>
+      <section id="calculator">
+        <div class="inputs">
+          <input id="user-weight" type="text" placeholder="Weight (lbs)"/>
+          <select id="planets">Planets</select>
+        </div>
+        <button id="calculate-button">Calculate</button>
+        <p id="output"></p>
+      </section>
+      <script src="main.js" charset="utf-8"></script>
+    </section>
+  </main>
 </body>
-
 </html>
