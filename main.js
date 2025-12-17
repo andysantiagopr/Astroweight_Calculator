@@ -28,10 +28,8 @@
         for (let planet of planets) {
             if (planet[0] === planetName) {
                 return planet[1] * weight;
-            } else {
-                return "Planet not found in our system!"
             }
-        }
+        } return "Planet not found in our system!"
     } 
     function handleClickEvent(e) {
         let userWeight = Number(document.getElementById("user-weight").value);
