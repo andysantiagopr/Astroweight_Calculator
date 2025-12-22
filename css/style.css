@@ -1,18 +1,18 @@
 html, body {
   height: 100%;
-  margin: 0;
+  margin: 0; /* resets browser defaults, which they usually do to 8px */
 }
 
 .bg-video {
-  position: fixed;
-  inset: 0;
+  position: fixed; /* sticks the bg allowing one to scroll down keeping the bg intact*/
+  inset: 0; /* stretches to all edges*/
   width: 100%;
   height: 100%;
-  object-fit: cover;   /* makes it fill without stretching */
-  z-index: -2;
+  object-fit: cover;   /* makes it fill without stretching maintaining its aspect ratio */
+  z-index: -2; /* creates ordered layers, in this case we want the background to be further back than the rest of the content */
 }
 
-/* Dark overlay so your text stays readable */
+/* Dark overlay so your text stays readable due to the dark bg*/
 body::before {
   content: "";
   position: fixed;
@@ -60,17 +60,10 @@ main {
 
 #calculator input, 
 #calculator select {
-    justify-content: center;
-    align-items: center;
     gap: 12px;
     flex-wrap: wrap;
     padding: 10px 12px;
     border-radius: 6px;
     border: none;
     outline: none;
-}
-
-#calculator > input,
-#calculator > select {
-  display: inline-block;
 }
